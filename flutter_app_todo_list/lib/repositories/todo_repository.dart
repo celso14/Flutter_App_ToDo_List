@@ -9,7 +9,6 @@ class TodoRepository {
   TodoRepository() {
     SharedPreferences.getInstance().then((value) {
       sharedPreferences = value;
-      print(sharedPreferences.getString('todo_list'));
     });
   }
 
